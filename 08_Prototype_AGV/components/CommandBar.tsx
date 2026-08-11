@@ -57,7 +57,7 @@ export default function CommandBar({ onTaskCreated }: { onTaskCreated: () => voi
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={(e) => e.key === "Enter" && send()}
           placeholder="Nhập lệnh vận chuyển..."
-          className="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200"
+          className="flex-1 border border-gray-200 rounded-lg px-3 py-2 text-sm bg-white text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-200"
         />
         <button
           onClick={send}

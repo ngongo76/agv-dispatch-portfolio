@@ -42,7 +42,7 @@ export default function ManualTaskForm({
         <select
           value={pickup}
           onChange={(e) => setPickup(e.target.value)}
-          className="border border-gray-200 rounded-lg px-2 py-1.5"
+          className="border border-gray-200 rounded-lg px-2 py-1.5 bg-white text-gray-900"
         >
           {zones.map((z) => (
             <option key={z.zone_id} value={z.zone_id}>
@@ -54,7 +54,7 @@ export default function ManualTaskForm({
         <select
           value={dropoff}
           onChange={(e) => setDropoff(e.target.value)}
-          className="border border-gray-200 rounded-lg px-2 py-1.5"
+          className="border border-gray-200 rounded-lg px-2 py-1.5 bg-white text-gray-900"
         >
           {zones.map((z) => (
             <option key={z.zone_id} value={z.zone_id}>
